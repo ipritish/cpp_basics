@@ -10,6 +10,16 @@ void print(int (&arr)[10])
 	}
 }
 
+void increment()
+{
+	int v[] = {0,1,2,3,4,5,6,7,8,9};
+	for (auto& x : v)
+	{
+		++x;
+		cout << x << "\n";
+	}
+}
+
 void copy_fct()
 {
 	int v1[10] = {0,1,2,3,4,5,6,7,8,9};
@@ -24,5 +34,6 @@ void copy_fct()
 int main()
 {
 	copy_fct();
+	increment();
 	return 0;
 }
